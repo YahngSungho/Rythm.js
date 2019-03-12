@@ -7,9 +7,9 @@ export default (elem, value, options = {}) => {
   } else {
     blur = min + blur
   }
-  elem.style.filter = `blur(${blur}px)`
+  elem.style.-webkit-filter = `blur(${blur}px)`
 }
 
 export const reset = elem => {
-  elem.style.filter = ''
+  elem.style.-webkit-filter = ''
 }
