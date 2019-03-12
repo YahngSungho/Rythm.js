@@ -320,11 +320,11 @@ var blur = (function (elem, value) {
   } else {
     blur = min + blur;
   }
-  elem.style.-webkit-filter = 'blur(' + blur + 'px)';
+  elem.style = '-webkit-filter: blur(' + blur + 'px);';
 });
 
 var reset$8 = function reset(elem) {
-  elem.style.-webkit-filter = '';
+  elem.style = '';
 };
 
 var coefficientMap = {
